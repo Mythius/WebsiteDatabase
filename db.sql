@@ -7,13 +7,13 @@ CREATE TABLE players(
 	name varchar(25),
 	pswd varchar(25),
 	PRIMARY KEY(id)
-)
+);
 
 CREATE TABLE games(
 	id int NOT NULL,
 	name varchar(25) NOT NULL,
 	PRIMARY KEY (id)
-)
+);
 
 CREATE TABLE scores(
 	id int NOT NULL,
@@ -23,4 +23,4 @@ CREATE TABLE scores(
 	PRIMARY KEY (id),
 	FOREIGN KEY (player_id) REFERENCES players(id),
 	FOREIGN KEY (game_id) REFERENCES games(id)
-)
+);
