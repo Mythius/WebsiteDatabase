@@ -7,7 +7,7 @@ CREATE TABLE players(
 	name varchar(25),
 	pswd varchar(25),
 	PRIMARY KEY(id)
-);
+)
 
 CREATE TABLE games(
 	id int NOT NULL,
